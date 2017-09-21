@@ -1,0 +1,20 @@
+type Query {
+  players: [Player]
+  player(id: Int!): Player
+  item(id: Int!): Item
+  items: [Item]
+}
+
+type Player {
+  id: Int!
+  name: String!
+  class: String!
+  items: [Item]
+}
+
+type Item {
+  id: Int!
+  name: String!
+  power: Int!
+  toughness: Int!
+}
